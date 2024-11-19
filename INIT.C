@@ -90,7 +90,10 @@ void GlobalInitialize()
     //
     // used in file transfer status bar
     //
-    InitCommonControls();
+    INITCOMMONCONTROLSEX iccex = { 0 };
+    iccex.dwSize = sizeof(INITCOMMONCONTROLSEX);
+    iccex.dwICC = 0xFFFF;
+    InitCommonControlsEx(&iccex);
 
     //
     // font for status reporting control
