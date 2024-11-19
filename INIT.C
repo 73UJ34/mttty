@@ -90,7 +90,7 @@ void GlobalInitialize()
     //
     // used in file transfer status bar
     //
-    INITCOMMONCONTROLSEX iccex = { 0 };
+    INITCOMMONCONTROLSEX iccex;
     iccex.dwSize = sizeof(INITCOMMONCONTROLSEX);
     iccex.dwICC = 0xFFFF;
     InitCommonControlsEx(&iccex);
